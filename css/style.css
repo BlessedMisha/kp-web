@@ -306,6 +306,7 @@ nav {
   line-height: 19px;
   text-align: center;
   color: #323334;
+  margin-bottom: 23px;
 }
 
 .button_about {
@@ -897,7 +898,8 @@ footer {
 .second-chair-section-planshet,
 .second-card-chair,
 .artictext-block-planshet {
-  display: none;
+.articles-blockmain
+display: none;
 }
 
 .header-text {
