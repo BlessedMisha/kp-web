@@ -897,9 +897,10 @@ footer {
 .detail-images-planshet,
 .second-chair-section-planshet,
 .second-card-chair,
-.artictext-block-planshet {
+.artictext-block-planshet,
 .articles-blockmain
-display: none;
+ {
+  display: none;
 }
 
 .header-text {
