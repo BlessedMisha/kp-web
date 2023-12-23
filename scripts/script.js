@@ -18,19 +18,6 @@ function isElementInViewport(el) {
     );
 }
 
-function animateOnScroll() {
-    var partclubBlock = document.querySelector('.partclub-block');
-    if (isElementInViewport(partclubBlock)) {
-        partclubBlock.style.opacity = 1;
-        partclubBlock.style.transform = 'translateY(0)';
-    }
-}
-
-// Додаємо обробник прокрутки сторінки
-window.addEventListener('scroll', animateOnScroll);
-
-// Викликаємо анімацію відразу, якщо елемент вже в області видимості при завантаженні сторінки
-animateOnScroll();
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -41,32 +28,28 @@ function isElementInViewport(el) {
     );
 }
 
-function animateOnScroll() {
-    var articlesBlock = document.querySelector('.articles-blockmain');
-    if (isElementInViewport(articlesBlock)) {
-        articlesBlock.classList.add('animated');
-    }
-}
 
-// Додаємо обробник прокрутки сторінки
+    
+
+
 window.addEventListener('scroll', animateOnScroll);
 
-// Викликаємо анімацію відразу, якщо елемент вже в області видимості при завантаженні сторінки
-animateOnScroll();
+document.addEventListener('DOMContentLoaded', animateOnScroll);
+
 
 
 window.addEventListener("scroll", function () {
     const navbar = document.getElementById("myNavbar");
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 100) { // Змініть 100 на потрібну вам висоту для закріплення меню
+    if (scrollPosition > 10) { 
         navbar.classList.add("fixed");
     } else {
         navbar.classList.remove("fixed");
     }
 });
 
-ScrollReveal({ delay: 300 }).reveal(".scrollreveal");
+ScrollReveal({ delay: 250 }).reveal(".scrollreveal");
 ScrollReveal({ delay: 3 }).reveal(".scrollreveal-noreturn");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -91,17 +74,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
-// Отримати кнопку і модальне вікно
 var toggleButton = document.getElementById('centered-toggle-button');
 var modal = document.getElementById('myModal');
 var closeModalButton = document.getElementById('closeModal');
 
-// Відкриття модального вікна при натисканні кнопки
 toggleButton.onclick = function () {
     modal.style.display = 'block';
 };
 
-// Закриття модального вікна при натисканні кнопки закриття або поза вікном
 closeModalButton.onclick = function () {
     modal.style.display = 'none';
 };
