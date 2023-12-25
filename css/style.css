@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .hide {
   display: none;
 }
@@ -58,6 +59,26 @@ body {
 .hvr-shrink:focus,
 .hvr-shrink:active {
   transform: scale(0.92);
+}
+
+.swiper {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  align-self: center;
 }
 
 .body-wrapper {
@@ -898,8 +919,7 @@ footer {
 .second-chair-section-planshet,
 .second-card-chair,
 .artictext-block-planshet,
-.articles-blockmain
- {
+.articles-blockmain {
   display: none;
 }
 
